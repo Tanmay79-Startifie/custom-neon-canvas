@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { HeroSection } from "@/components/home/HeroSection";
 import { CategorySection } from "@/components/home/CategorySection";
+import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -64,6 +65,7 @@ const HomePage = () => {
     <Layout cartItems={3}>
       <HeroSection />
       <CategorySection />
+      <TestimonialsSection />
       
       {/* Featured Products */}
       <section className="py-20 px-4">

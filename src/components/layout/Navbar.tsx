@@ -90,13 +90,6 @@ export const Navbar = ({ cartItems = 0 }: NavbarProps) => {
               </Button>
             </Link>
 
-            {/* Admin Dashboard */}
-            <Link to="/admin">
-              <Button variant="neon-outline" size="sm">
-                Admin
-              </Button>
-            </Link>
-
             {/* Mobile Menu Toggle */}
             <Button
               variant="neon-ghost"

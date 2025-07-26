@@ -3,8 +3,8 @@ import { Button } from "./button";
 
 export const FloatingWhatsApp = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "1234567890"; // Replace with actual WhatsApp number
-    const message = "Hi! I'm interested in your custom neon signs.";
+    const phoneNumber = "919876543210"; // Replace with actual WhatsApp number (with country code)
+    const message = "Hi! मुझे आपके custom neon signs के बारे में जानकारी चाहिए।";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

@@ -93,7 +93,11 @@ export const Footer = () => {
                 <span>New York, NY</span>
               </div>
             </div>
-            <Button variant="neon" size="sm" className="w-full">
+            <Button variant="neon" size="sm" className="w-full" onClick={() => {
+              const phoneNumber = "919876543210";
+              const message = "Hi! मुझे NeonCraft के बारे में support चाहिए।";
+              window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+            }}>
               <MessageCircle className="w-4 h-4 mr-2" />
               WhatsApp Support
             </Button>

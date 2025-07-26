@@ -89,7 +89,7 @@ export const CategorySection = () => {
                     <p className="text-sm text-muted-foreground">
                       {category.description}
                     </p>
-                    <Link to={`/products?category=${category.title.toLowerCase().replace(/\s+/g, '-')}`}>
+                    <Link to="/products" state={{ category: category.title.toLowerCase().replace(/\s+/g, '-') }}>
                       <Button variant="neon-ghost" className="w-full group">
                         <span>Explore {category.title}</span>
                         <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
